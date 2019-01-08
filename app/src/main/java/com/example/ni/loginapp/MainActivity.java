@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login()
-    {
-        StringRequest request= new StringRequest(Request.Method.POST, "http://192.168.0.110/login/login.php",
+    {                                                                  //Your localhost or remote server url to get the php file
+        StringRequest request= new StringRequest(Request.Method.POST, "http://127.0.0.1/login/login.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
